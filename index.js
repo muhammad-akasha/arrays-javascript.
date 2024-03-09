@@ -98,211 +98,211 @@ console.log(num_str.toString());
 
 
 
-// // array assignment..
+// array assignment..
 
 
-// //Question 1. literal notation
+//Question 1. literal notation
 
-// let studentNames = [];
+let studentNames = [];
 
-// //Question 2 . object notation
+//Question 2 . object notation
 
-// let student = {
-//   Names :  []
-// };
+let student = {
+  Names :  []
+};
 
-// // Question 3 to 6.
+// Question 3 to 6.
 
 
-// let currencies = ["PKR", "USD" , "INR" , "EUR" , "JPY" ] ;
+let currencies = ["PKR", "USD" , "INR" , "EUR" , "JPY" ] ;
 
-// console.log(currencies);
+console.log(currencies);
 
 
 
-// let tableOf10 = [10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100];
+let tableOf10 = [10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100];
 
-// console.log(tableOf10);
+console.log(tableOf10);
 
-// let boleanValue = [true , false];
+let boleanValue = [true , false];
 
-// console.log(boleanValue);
+console.log(boleanValue);
 
 
-// let mixArr = [ "USD" , 1 , 250 , true , false ];
+let mixArr = [ "USD" , 1 , 250 , true , false ];
 
-// console.log(mixArr);
+console.log(mixArr);
 
-// //Question 7.
+//Question 7.
 
-// let qualificationEduPak = ["SSC" , "HSC" , "BCS" , "BS" , "BCOM" , "MS" , "M.PHIL." , "PhD"];
+let qualificationEduPak = ["SSC" , "HSC" , "BCS" , "BS" , "BCOM" , "MS" , "M.PHIL." , "PhD"];
 
-// console.log(qualificationEduPak[7])
+console.log(qualificationEduPak[7])
 
-// document.write("<h1> Qualification </h1>");
+document.write("<h1> Qualification </h1>");
 
-// qualificationEduPak = qualificationEduPak.values();
+qualificationEduPak = qualificationEduPak.values();
 
-// for (let values of qualificationEduPak){
-//     // console.log(values)
-//     document.write("<h2>", values , "</h2>")
-// }
+for (let values of qualificationEduPak){
+    // console.log(values)
+    document.write("<h2>", values , "</h2>")
+}
 
-// //Question 8
+//Question 8
 
-// let student_names = ["Ahmed" , "Kashan" , "Asif"];
+let student_names = ["Ahmed" , "Kashan" , "Asif"];
 
-// let studentMarks = [287 , 376 , 488];
+let studentMarks = [287 , 376 , 488];
 
-// let totalMarks = 500;
+let totalMarks = 500;
 
 
-// let student_1=  studentMarks [0] / totalMarks * 100 ;
-// let student_2=  studentMarks [1] / totalMarks * 100 ;
-// let student_3=  studentMarks [2] / totalMarks * 100 ;
+let student_1=  studentMarks [0] / totalMarks * 100 ;
+let student_2=  studentMarks [1] / totalMarks * 100 ;
+let student_3=  studentMarks [2] / totalMarks * 100 ;
 
 
-// document.write(" <h2> scores of ",student_names[0] , " is " ,studentMarks[0], ". percentage ",student_1 , "% </h2>");
+document.write(" <h2> scores of ",student_names[0] , " is " ,studentMarks[0], ". percentage ",student_1 , "% </h2>");
 
-// document.write(" <h2> scores of ",student_names[1] , " is " ,studentMarks[1], ". percentage ",student_2 , "% </h2>");
+document.write(" <h2> scores of ",student_names[1] , " is " ,studentMarks[1], ". percentage ",student_2 , "% </h2>");
 
-// document.write(" <h2> scores of ",student_names[2] , " is " ,studentMarks[2], ". percentage ",student_3 , "% </h2>");
+document.write(" <h2> scores of ",student_names[2] , " is " ,studentMarks[2], ". percentage ",student_3 , "% </h2>");
 
-// //Question 9.
+//Question 9.
 
-// let colorNames = [];
+let colorNames = [];
 
-// let userColor1 = prompt("Enter Any One Color Your Want To Add The Begining");
+let userColor1 = prompt("Enter Any One Color Your Want To Add The Begining");
 
-// let userColor2 = prompt("Enter Any One Color Your Want To Add At The End");
+let userColor2 = prompt("Enter Any One Color Your Want To Add At The End");
 
 
-// colorNames = [userColor1 , userColor2];
+colorNames = [userColor1 , userColor2];
 
-// document.write("<h2>",colorNames,"</h2>");
-// console.log(colorNames);
-// colorNames.splice(0,0,"red" , "green");
+document.write("<h2>",colorNames,"</h2>");
+console.log(colorNames);
+colorNames.splice(0,0,"red" , "green");
 
-// document.write("<h2>",colorNames,"</h2>");
+document.write("<h2>",colorNames,"</h2>");
 
-// colorNames.pop();
+colorNames.pop();
 
-// document.write("<h2>",colorNames,"</h2>");
-// console.log(colorNames);
-// let addColor = prompt("Enter Any One Color Name");
+document.write("<h2>",colorNames,"</h2>");
+console.log(colorNames);
+let addColor = prompt("Enter Any One Color Name");
 
-// let giveIndex = prompt("Enter In Which Index You Want To Add A Color");
+let giveIndex = prompt("Enter In Which Index You Want To Add A Color");
 
 
-// colorNames.splice(giveIndex,0,addColor);
+colorNames.splice(giveIndex,0,addColor);
 
-// document.write("<h2>",colorNames,"</h2>");
-// console.log(colorNames);
+document.write("<h2>",colorNames,"</h2>");
+console.log(colorNames);
 
 
-// let giveIndexToRemove = prompt("Enter In Which Index You Want To Delete A Color");
+let giveIndexToRemove = prompt("Enter In Which Index You Want To Delete A Color");
 
 
-// let removeColors = prompt("How Many Colors You Want To Delete");
+let removeColors = prompt("How Many Colors You Want To Delete");
 
 
-// colorNames.splice(giveIndexToRemove,removeColors);
+colorNames.splice(giveIndexToRemove,removeColors);
 
-// document.write("<h2>",colorNames,"</h2>");
-// console.log(colorNames);
+document.write("<h2>",colorNames,"</h2>");
+console.log(colorNames);
 
 
-// //Question 10.
+//Question 10.
 
-// let studentScore = [320, 230,480, 120,];
-// console.log(studentScore);
+let studentScore = [320, 230,480, 120,];
+console.log(studentScore);
 
 
-// studentScore.sort();
+studentScore.sort();
 
-// console.log(studentScore);
+console.log(studentScore);
 
-// //Question 11.
+//Question 11.
 
-// let cities = ["karachi" , "islamabad" , "peshawar" , "quetta","multan"];
+let cities = ["karachi" , "islamabad" , "peshawar" , "quetta","multan"];
 
-// console.log(cities);
+console.log(cities);
 
-// document.write("<h1>  cities  </h1>");
+document.write("<h1>  cities  </h1>");
 
-// document.write("<h2>" , cities , "</h2>");
+document.write("<h2>" , cities , "</h2>");
 
-// document.write("<h1>select values from cities and add into new array</h1>");
+document.write("<h1>select values from cities and add into new array</h1>");
 
-// let selectedCities = cities.slice(2,5); //select value from cities and add into selected cities.
+let selectedCities = cities.slice(2,5); //select value from cities and add into selected cities.
 
-// console.log(selectedCities)
-// document.write("<h2>" ,selectedCities , "</h2>");
+console.log(selectedCities)
+document.write("<h2>" ,selectedCities , "</h2>");
 
-// // Question 12.
+// Question 12.
 
-// let array_1 = ["This" , "is" , "my" , "cat"];
-// document.write("<h1> Array : </h1>");
+let array_1 = ["This" , "is" , "my" , "cat"];
+document.write("<h1> Array : </h1>");
 
-// document.write("<h1>",array_1," : </h1>");
+document.write("<h1>",array_1," : </h1>");
 
-// document.write("<h1> remove first , and add - </h1>");
+document.write("<h1> remove first , and add - </h1>");
 
-// let array_2 = array_1.join(" ");
+let array_2 = array_1.join(" ");
 
-// document.write("<h1> String : </h1>");
+document.write("<h1> String : </h1>");
 
-// document.write("<h2>",array_2," </h2>");
+document.write("<h2>",array_2," </h2>");
 
-// console.log(array_2);
+console.log(array_2);
 
-// array_2 = array_1.join("-");
+array_2 = array_1.join("-");
 
-// document.write("<h2>",array_2,"</h2>");
+document.write("<h2>",array_2,"</h2>");
 
-// console.log(array_2);
+console.log(array_2);
 
-// // Question 13.
+// Question 13.
 
-// let Devices = [ "Cpu" , "Moniter" , "Keyboard" , "Mouse", "Printer" , "Ram" , "Rom"];
+let Devices = [ "Cpu" , "Moniter" , "Keyboard" , "Mouse", "Printer" , "Ram" , "Rom"];
 
-// let out_devices= Devices ;
+let out_devices= Devices ;
 
-// console.log(out_devices);
+console.log(out_devices);
 
 
 
-// console.log("out :", out_devices[0]);
-// console.log("out :", out_devices[1]);
-// console.log("out :", out_devices[2]);
-// console.log("out :", out_devices[3]);
-// console.log("out :", out_devices[4]);
-// console.log("out :", out_devices[5]);
-// console.log("out :", out_devices[6]);
+console.log("out :", out_devices[0]);
+console.log("out :", out_devices[1]);
+console.log("out :", out_devices[2]);
+console.log("out :", out_devices[3]);
+console.log("out :", out_devices[4]);
+console.log("out :", out_devices[5]);
+console.log("out :", out_devices[6]);
 
-// // Question 14
+// Question 14
 
-// let Devices_2 = [ "Cpu" , "Moniter" , "Keyboard" , "Mouse", "Printer" , "Ram" , "Rom"];
+let Devices_2 = [ "Cpu" , "Moniter" , "Keyboard" , "Mouse", "Printer" , "Ram" , "Rom"];
 
-// let out_devices_2= Devices_2 ;
+let out_devices_2= Devices_2 ;
 
-// console.log(out_devices_2);
+console.log(out_devices_2);
 
-// let reverse = out_devices_2.reverse();
+let reverse = out_devices_2.reverse();
 
-// console.log("out :", out_devices_2[0]);
-// console.log("out :", out_devices_2[1]);
-// console.log("out :", out_devices_2[2]);
-// console.log("out :", out_devices_2[3]);
-// console.log("out :", out_devices_2[4]);
-// console.log("out :", out_devices_2[5]);
-// console.log("out :", out_devices_2[6]);
+console.log("out :", out_devices_2[0]);
+console.log("out :", out_devices_2[1]);
+console.log("out :", out_devices_2[2]);
+console.log("out :", out_devices_2[3]);
+console.log("out :", out_devices_2[4]);
+console.log("out :", out_devices_2[5]);
+console.log("out :", out_devices_2[6]);
 
-// //Question 15
+//Question 15
 
-// let phoneManufactures = ["Apple" , "Nokia" , "Samsung" , "Motrola" , "Vivo" , "Oneplus"]
+let phoneManufactures = ["Apple" , "Nokia" , "Samsung" , "Motrola" , "Vivo" , "Oneplus"]
 
-// document.write("<select> <option > ", phoneManufactures[0]   ,"</option>  <option> ", phoneManufactures[1]   ,"</option>  <option> ", phoneManufactures[2]   ,"</option>  <option class= hovereff> ", phoneManufactures[3]   ,"</option>  <option> ", phoneManufactures[4]   ,"</option>  <option> ", phoneManufactures[5]   ,"</option> </select>")
+document.write("<select> <option > ", phoneManufactures[0]   ,"</option>  <option> ", phoneManufactures[1]   ,"</option>  <option> ", phoneManufactures[2]   ,"</option>  <option class= hovereff> ", phoneManufactures[3]   ,"</option>  <option> ", phoneManufactures[4]   ,"</option>  <option> ", phoneManufactures[5]   ,"</option> </select>")
 
 
 
