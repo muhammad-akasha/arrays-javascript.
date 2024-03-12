@@ -1,103 +1,3 @@
-// array practicing..
-
-let ourCities = [" karachi ", " quetta ", " rawalpindi ", " muree ", " lahore "]; //use to different values in one variable.
-console.log(ourCities);
-
-ourCities[1] = "islamabad";// in this islamabad has add to index of 1 which was quetta..
-
-
-//if you check numbers in an array variable typing variable name plus 0 1 2 etc number are add in square braket [ ] an arrays has add numbering to its values start from zero .
-
-console.log(ourCities);
-
-ourCities.push("lala musa"); // to add another value in array at end.
-
-console.log(ourCities);
-
-ourCities.pop();// to remove last added value in an array.
-
-console.log(ourCities);
-
-console.log(ourCities.slice(0,3));//to see array value from starting 3 values.
-
-ourCities.forEach(function(element) {  // to see value in on another line ..
-    console.log(element);
-});
-
-ourCities.splice(0,1,"gujarkhan","okara","gujrawala");// in this example 0 means start and 1 mean to delete after 0 and add this value ..
-console.log(ourCities);
-
-
-
-// let name = "100";
-
-// fullName = parseInt("Str");
-
-// console.log(name);
-
-console.log(ourCities.length);
-
- ourCities.unshift("multan" , "peshawar"); // to add value in start.
-
- console.log(ourCities);
-
- ourCities.shift();
-
- console.log(ourCities);// to remove start value.
-
- console.log(Object(ourCities));
-
- 
- ourCities.forEach(function(index,element) {  // to see value in on another line ..
-    console.log(element,index);
-});
-
-
-ourCities.reverse();
-
-console.log(ourCities);
-
-let veg =["potato"  , "tomato"]
-
-
-let fruit = ["mango" , "pineapple" , "apple"];
-
-let arrayJoin = ourCities.concat(fruit,veg);// to join different arrays in one array.
-
-console.log(arrayJoin);
-
-let check = veg.entries();
-
-console.log(check.next().value);
-
-
-let numbers = [10 , 11, 12, 12 ,15];
-
-console.log(numbers.fill(5,1,5)); // fill the array with no 5 .. the first value is for fill second is for start index and last is for to end for filling no 5.
-
-let num = [1000, 11, 12, 12 ,15,1000];
-
-console.log(num)
-
-let findingNum = num.find((element) => element > 14);// to find only one greater then 14 in an array. start finding from index of 0
-
-console.log(findingNum);
-
-
-let checkLength = ["hello" , "hi" , "welcome" , "to" , "array" , "topic"] 
-
-let lengthResult = checkLength.filter((checkLength) => checkLength.length > 4); // find all greater then 4  ..
-
-console.log(lengthResult);
-
-let  num_str = [1, 100, "a" , "2"]
-
-console.log(num_str.toString());
-
-
-
-
-
 // array assignment..
 
 
@@ -108,7 +8,7 @@ let studentNames = [];
 //Question 2 . object notation
 
 let student = {
-  Names :  []
+  name : []
 };
 
 // Question 3 to 6.
@@ -144,7 +44,7 @@ document.write("<h1> Qualification </h1>");
 qualificationEduPak = qualificationEduPak.values();
 
 for (let values of qualificationEduPak){
-    // console.log(values)
+  
     document.write("<h2>", values , "</h2>")
 }
 
@@ -181,7 +81,7 @@ colorNames = [userColor1 , userColor2];
 
 document.write("<h2>",colorNames,"</h2>");
 console.log(colorNames);
-colorNames.splice(0,0,"red" , "green");
+colorNames.splice(1,0,"purple" , "darkblue");
 
 document.write("<h2>",colorNames,"</h2>");
 
@@ -234,7 +134,7 @@ document.write("<h2>" , cities , "</h2>");
 
 document.write("<h1>select values from cities and add into new array</h1>");
 
-let selectedCities = cities.slice(2,5); //select value from cities and add into selected cities.
+let selectedCities = cities.slice(2,5); //select value from cities and add into select cities.
 
 console.log(selectedCities)
 document.write("<h2>" ,selectedCities , "</h2>");
@@ -264,39 +164,47 @@ console.log(array_2);
 
 // Question 13.
 
-let Devices = [ "Cpu" , "Moniter" , "Keyboard" , "Mouse", "Printer" , "Ram" , "Rom"];
+let devicesFifo = [];
 
-let out_devices= Devices ;
+devicesFifo.push("Keyboard");
+devicesFifo.push("Mouse");
+devicesFifo.push("Cpu");
+devicesFifo.push("Moniter");
 
-console.log(out_devices);
+document.write("<h1> Devices </h1>");
 
+document.write(" <h2> ", devicesFifo ," </h2> ");
 
+document.write(" <h2>  FIFO : First in First Out  </h2> ");
 
-console.log("out :", out_devices[0]);
-console.log("out :", out_devices[1]);
-console.log("out :", out_devices[2]);
-console.log("out :", out_devices[3]);
-console.log("out :", out_devices[4]);
-console.log("out :", out_devices[5]);
-console.log("out :", out_devices[6]);
+document.write(" <h2> ", devicesFifo.shift()," </h2> ");
+document.write(" <h2> ", devicesFifo.shift()," </h2> ");
+document.write(" <h2> ", devicesFifo.shift()," </h2> ");
+document.write(" <h2> ", devicesFifo.shift()," </h2> ");
 
 // Question 14
 
-let Devices_2 = [ "Cpu" , "Moniter" , "Keyboard" , "Mouse", "Printer" , "Ram" , "Rom"];
+let devicesLifo = [];
 
-let out_devices_2= Devices_2 ;
+devicesLifo.unshift("Keyboard");
+devicesLifo.unshift("Mouse");
+devicesLifo.unshift("Cpu");
+devicesLifo.unshift("Moniter");
 
-console.log(out_devices_2);
+document.write("<h1> Devices </h1>");
 
-let reverse = out_devices_2.reverse();
+devicesLifo.reverse();
 
-console.log("out :", out_devices_2[0]);
-console.log("out :", out_devices_2[1]);
-console.log("out :", out_devices_2[2]);
-console.log("out :", out_devices_2[3]);
-console.log("out :", out_devices_2[4]);
-console.log("out :", out_devices_2[5]);
-console.log("out :", out_devices_2[6]);
+document.write(" <h2> ", devicesLifo ," </h2> ");
+
+document.write(" <h2>  Last In First Out </h2> ");
+document.write(" <h2> ", devicesLifo.pop()," </h2> ");
+document.write(" <h2> ", devicesLifo.pop()," </h2> ");
+document.write(" <h2> ", devicesLifo.pop()," </h2> ");
+document.write(" <h2> ", devicesLifo.pop()," </h2> ");
+
+
+
 
 //Question 15
 
@@ -305,6 +213,27 @@ let phoneManufactures = ["Apple" , "Nokia" , "Samsung" , "Motrola" , "Vivo" , "O
 document.write("<select> <option > ", phoneManufactures[0]   ,"</option>  <option> ", phoneManufactures[1]   ,"</option>  <option> ", phoneManufactures[2]   ,"</option>  <option class= hovereff> ", phoneManufactures[3]   ,"</option>  <option> ", phoneManufactures[4]   ,"</option>  <option> ", phoneManufactures[5]   ,"</option> </select>")
 
 
-
-
-
+let myProfile = {
+    firstName : "Akasha",
+    lastName : "Shahzad",
+    age : 23,
+    isLike : true,
+    isFollow : false,
+    comments : ["first" , "second " , "third" , "fourth" , "fifth"]
+  
+  }
+  
+  console.log(myProfile);
+  
+  let smitGulshanCampus = [   ourClass =   {
+    ourTeacherName : "Sir Nadir Bashir",
+    classTiming : "11:00 am to 1:00 pm ",
+    ramzanTiming : "9:30 am to 11:00 am",
+    courseName : "WMA - Web And Mobile App Development",
+    courseLanguage : "HTML CSS and Javascript",
+    studentsInOurClass : 80,
+  
+  }];
+  
+  console.log(smitGulshanCampus);
+  
